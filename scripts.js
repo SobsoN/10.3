@@ -5,16 +5,7 @@ $(document).ready(function () {
 		slides = carouselInside.find('.slide');
 	let interval = "";
 
-	// DEFINING NEW ATRIBUTE FOR SLIDE SO I CAN EASLY IDENTIFY ELEMENTS
-	for (let i = 1; i <= slides.length; i++) {
-		const addition = slides[i];
-		$(addition).attr('whichOne', i);
-	}
-
-	for (let i = 1; i <= slides.length; i++) {
-		$('.slider__dots').append('<li><a href="#" whichOne="' + i + '"></a></li>');
-	}
-
+	
 	//SLIDE FUNCTIONS
 
 	//DECLARING WHAT HAPPENS AFTER LAST SLIDE POPS
